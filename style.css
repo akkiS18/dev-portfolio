@@ -1,16 +1,45 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 a {
     text-decoration: none;
 }
+nav a:hover {
+    color: coral;
+}
+nav a {
+    color: gray;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: large;
+}
 
-.home {
+/* .home {
     background: linear-gradient(0.25turn, #222324, #353635, #131212);
 }
 
@@ -27,15 +56,8 @@ nav {
     padding-left: 20px;
     border-bottom: #fff solid 1px;
 }
-nav a {
-    color: gray;
-    margin-right: 40px;
-    text-decoration: none;
-    font-size: large;
-}
-nav a:hover {
-    color: coral;
-}
+
+
 
 .home-title {
     display: flex;
@@ -74,6 +96,7 @@ nav a:hover {
 
 .work {
     display: flex;
+    justify-content: center;
     padding: 0 50px;
     background: linear-gradient(0.25turn, #222324, #353635, #131212);
 }
@@ -83,20 +106,17 @@ nav a:hover {
     text-align: center;
     margin-bottom: 50px;
     padding-top: 20px;
-}
-.work img {
-    width: 400px;
-    height: 200px;
+} */
+.img {
     transition: all .6s ease;
 }
-.work img:hover {
+.img:hover {
     transform: scale(1.05);
 }
-.coursework {
+/* .coursework {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -128,3 +148,7 @@ nav a:hover {
     color: #fff;
     padding-top: 250px;
 }
+
+@media (max-width: 1120px) {
+
+} */
