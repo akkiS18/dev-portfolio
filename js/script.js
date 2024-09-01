@@ -11,12 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		workElement.classList.add("show_work");
 	});
 
-	function hideWork() {
+	back.addEventListener("click", () => {
 		workElement.classList.remove("show_work");
-	}
-
-	brand.addEventListener("click", hideWork);
-	back.addEventListener("click", hideWork);
+	});
 
 	envoy.addEventListener("click", () => {
 		alert("Loyiha to'liq yakunlanmagan");

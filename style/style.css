@@ -43,12 +43,12 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000;
+	z-index: 100;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px 0;
-	background-color: #555;
+	background-color: coral;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
@@ -56,7 +56,7 @@ a {
 .navbar_brand {
 	font-size: 40px;
 	font-weight: bold;
-	color: #ccc;
+	color: #333;
 }
 
 #work {
@@ -84,7 +84,6 @@ a {
 .work_container_first {
 	position: relative;
 	width: 80%;
-	margin-top: 40px;
 }
 
 .work-container {
@@ -118,9 +117,9 @@ a {
 	color: #fff;
 }
 
-.work_description {
+.technology {
 	font-size: 1rem;
-	color: #ccc;
+	color: coral;
 	line-height: 1.6;
 }
 
@@ -141,7 +140,7 @@ a {
 	top: 20px;
 	width: 12px;
 	height: 12px;
-	background-color: #ff6e00;
+	background-color: coral;
 	border-radius: 50%;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
@@ -227,8 +226,9 @@ a {
 }
 
 .btn_outline_light {
-	color: #fff;
-	border: 2px solid #fff;
+	color: #333;
+	background-color: coral;
+	border: 2px solid coral;
 	width: 200px;
 	height: 50px;
 	display: flex;
@@ -240,8 +240,8 @@ a {
 }
 
 .btn_outline_light:hover {
-	background-color: #fff;
-	color: #000;
+	color: coral;
+	background: transparent;
 }
 
 .btn_view {
@@ -260,9 +260,9 @@ a {
 }
 
 .btn_view:hover {
-	background-color: #ccc;
+	background-color: coral;
 	transform: translateY(-2px);
-	color: #000;
+	color: #333;
 }
 
 .btn_view:active {
