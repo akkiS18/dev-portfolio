@@ -1,26 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
 	document.querySelector(".content").classList.add("loaded");
 
-	const work_open = document.getElementById("click_work");
-	const main = document.getElementById("main");
-	const footer = document.getElementById("footer");
-	const back = document.getElementById("back");
-	const workElement = document.getElementById("work");
-	const envoy = document.getElementById("envoy");
+	const navbar = document.getElementById("navbar");
 
-	work_open.addEventListener("click", () => {
-		workElement.classList.add("show_work");
-		main.classList.add("hide");
-		footer.classList.add("hide");
+	let lastScroll = 0;
+
+	window.addEventListener("scroll", () => {
+		const currentScroll = window.scrollY;
+
+		if (currentScroll > lastScroll && currentScroll > 100) {
+			navbar.classList.add("hide-navbar");
+		} else {
+			navbar.classList.remove("hide-navbar");
+		}
+
+		lastScroll = currentScroll;
 	});
 
-	back.addEventListener("click", () => {
-		workElement.classList.remove("show_work");
-		main.classList.remove("hide");
-		footer.classList.remove("hide");
-	});
+	window.openModal = function (src) {
+		const modal = document.getElementById("imageModal");
+		const modalImg = document.getElementById("modalImg");
+		modalImg.src = src;
+		modal.style.display = "flex";
+	};
 
-	envoy.addEventListener("click", () => {
-		alert("Loyiha to'liq yakunlanmagan");
+	window.closeModal = function () {
+		document.getElementById("imageModal").style.display = "none";
+	};
+
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "Escape") {
+			closeModal();
+		}
 	});
 });
